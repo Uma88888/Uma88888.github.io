@@ -1,0 +1,336 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #22201D;
+
+    margin: 0;
+}
+
+/* CONTAINER */
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* HEADER */
+
+header {
+    background: #f7f9fa;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #4a6a7f;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* HERO */
+
+.hero {
+    display: flex;
+    align-items: flex-start;
+
+    padding-top: 80px;
+    padding-left: 95px;
+
+    min-height: 230px;
+
+    background-image: url("images/hero_image.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.hero-text h1 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.hero-text h2 {
+    margin-bottom: 15px;
+}
+
+.hero-text {
+    background: rgba(245,240,230,0.38);
+
+    backdrop-filter: blur(3px);
+
+    padding: 10px;
+
+    max-width: 800px;
+}
+
+.hero-text p {
+    margin-bottom: 10px;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.service-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.service-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+.service-groups {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-top: 25px;
+}
+
+.service-group h3 {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.service-group ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.service-group li {
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+@media (max-width: 768px) {
+    .service-groups {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+/* LINKS SECTION */
+
+.links-section {
+    background: #f7f9fa;
+    margin-top: 50px;
+    padding: 40px 0;
+}
+
+.link-box {
+    margin-bottom: 30px;
+}
+
+.link-box h2 {
+    margin-bottom: 10px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 18px;
+    background: #4a6a7f;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background: #3b5566;
+}
+
+/* CONTACT */
+
+.contact-preview {
+    padding: 50px 0;
+}
+
+.contact-preview h2 {
+    margin-bottom: 15px;
+}
+
+.contact-preview p {
+    margin-bottom: 20px;
+}
+/* FOOTER */
+
+footer {
+    margin-top: 50px;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+    color: #777;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+   
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+}
+
+.link-box ul {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.link-box li {
+    margin-bottom: 8px;
+}
+
+.project-image {
+    display: block;
+    width: 100%;
+    max-width: 1100px;
+    max-width: 900px;
+    margin: 20px auto;
+    border-radius: 6px;
+    margin-bottom: 25px;
+}
+
+.project-hero {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 10px 0 40px;
+    border-radius: 6px;
+}
+.analysis-box {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 35px;
+    background: #f8f8f8;
+    border-radius: 8px;
+    border-left: 5px solid #4a6a7f;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.analysis-box h2 {
+    color: #4a6a7f;
+}
+
+/* Project comparison table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.95rem;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: 600;
+    text-align: left;
+    padding: 12px;
+    border-bottom: 2px solid #ccc;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: #f8f8f8;
+}
+
+.soil-summary {
+    margin: 50px auto;
+    max-width: 1100px;
+}
+
+.soil-summary h2 {
+    margin-bottom: 15px;
+}
+
+.soil-summary p {
+    margin-bottom: 25px;
+    max-width: 900px;
+}
+
+.soil-summary table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.soil-summary th {
+    background: #f7f9fa;
+    font-weight: bold;
+    text-align: left;
+}
+
+.soil-summary th,
+.soil-summary td {
+    border: 1px solid #d9d9d9;
+    padding: 10px;
+}
+
+.soil-summary tr:nth-child(even) {
+    background: #fafafa;
+}
+
+.project-links {
+    margin-top: 25px;
+    display: grid;
+    gap: 12px;
+}
+
+.project-links a {
+    display: block;
+    padding: 14px 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #4a6a7f;
+    background: #fff;
+}
+
+.project-links a:hover {
+    border-color: #4a6a7f;
+    background: #f7f9fa;
+}
