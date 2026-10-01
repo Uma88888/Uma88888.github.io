@@ -363,3 +363,25 @@ tr:hover {
 .disclaimer p {
     margin-bottom: 10px;
 }
+
+/* MOBILE HERO */
+
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 40px 20px;
+        min-height: 400px;
+    }
+
+    .hero-text {
+        width: 100%;
+        max-width: none;
+        padding: 16px;
+    }
+
+    .hero-text h1 {
+        font-size: 1.6rem;
+        line-height: 1.3;
+    }
+
+}
