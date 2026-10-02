@@ -76,8 +76,6 @@ nav a:hover {
     background-image: url("Images/hero_image.png");
     background-size: cover;
     background-position: center;
-
-    overflow: hidden;
 }
 
 .hero-grid {
@@ -85,24 +83,6 @@ nav a:hover {
     grid-template-columns: 1fr 1fr;
     gap: 30px;
     align-items: center;
-}
-
-.hero-text {
-    box-sizing: border-box;
-
-    width: 100%;
-    max-width: 900px;
-
-    background: rgba(245,240,230,0.38);
-    backdrop-filter: blur(3px);
-
-    padding: 10px;
-}
-
-.hero-overlay {
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
 }
 
 .hero-text h1 {
@@ -113,6 +93,16 @@ nav a:hover {
 
 .hero-text h2 {
     margin-bottom: 15px;
+}
+
+.hero-text {
+    background: rgba(245,240,230,0.38);
+
+    backdrop-filter: blur(3px);
+
+    padding: 10px;
+
+    max-width: 900px;
 }
 
 .hero-text p {
@@ -384,10 +374,11 @@ tr:hover {
     }
 
     .hero-text {
-        width: 100%;
-        max-width: none;
-        padding: 16px;
-    }
+    width: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 16px;
+}
 
     .hero-text h1 {
         font-size: 1.6rem;
